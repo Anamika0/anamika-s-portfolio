@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+.preloader {
+  width: 100%;
+  height: 100vh;
+  // background-color: #000;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+
+body {
+  font-family: "Michroma", sans-serif;
+}
+.preloader .texts-container {
+  font-family: "Michroma", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 28px;
+  //   font-size: 20px;
+  //   font-weight: 800;
+  font-size: 30px;
+  font-variant: small-caps;
+  font-weight: 500;
+  // font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  gap: 20px;
+  margin-left: -200px;
+}
+
+#Layer_1 {
+  height: 150px;
+  width: 150px;
+  stroke: white;
+  fill-opacity: 0;
+  stroke-width: 3px;
+  stroke-dasharray: 4500;
+  animation: draw 10s ease;
+  margin-left: -200px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

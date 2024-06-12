@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Charm:wght@400;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jersey+25&family=Merienda:wght@300..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Whisper&display=swap");
+
+.technology {
+  // display: inline-block;
+  height: 100dvh;
+  box-shadow: rgba(235, 231, 231, 0.1) 0px 10px 15px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+@keyframes divappear {
+  from {
+    transform: perspective(1000px) rotatex(35deg) scale(0.75);
+  }
+
+  to {
+    transform: perspective(1000px) rotatex(0deg) scale(1);
+  }
+}
+
+.heading {
+  padding-top: 100px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-family: Fira Sans;
+  letter-spacing: 10px;
+  font-size: 58px;
+  color: lightgray;
+  opacity: 1;
+}
+
+.items {
+  display: flex;
+  top: 50%;
+  left: 50%;
+  gap: 80px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+  width: 100%;
+  font-size: 100px;
+  padding-left: 20vh;
+  padding-right: 20vh;
+}
+
+.Framer {
+  font-size: 100px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.React:hover,
+.Framer:hover,
+.NodeJs:hover,
+.Figma:hover,
+.Express:hover,
+.Tailwind:hover,
+.MongoDb:hover,
+.Sql:hover {
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.React,
+.Framer,
+.NodeJs,
+.Figma,
+.Express,
+.Tailwind,
+.MongoDb,
+.Sql {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(153, 108, 185, 0.4);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+  // animation-iteration-count: infinite;
+  // -webkit-animation-iteration-count: infinite;
+  color: rgb(245, 240, 240);
+
+  :hover {
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+  }
+}
+
+.React {
+  span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  70% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
